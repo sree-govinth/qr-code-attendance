@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 import os
 
-app = Flask(__name__, template_folder="frontend")
+app = Flask(__name__, template_folder="templates", static_folder="static")
 
 @app.route("/")
 def home():
